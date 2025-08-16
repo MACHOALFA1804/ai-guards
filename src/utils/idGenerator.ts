@@ -24,7 +24,7 @@ export function generatePlanId(): string {
     // Extract existing IDs
     const existingIds = new Set<number>();
     
-    planFiles.forEach(file => {
+    planFiles.forEach((file: string) => {
       const match = file.match(/plan-(\d{3})/);
       if (match && match[1]) {
         existingIds.add(parseInt(match[1], 10));
