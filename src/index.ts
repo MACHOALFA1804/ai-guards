@@ -24,4 +24,5 @@ program.parse(process.argv);
 // If no arguments provided, show help
 if (!process.argv.slice(2).length) {
   program.outputHelp();
+  process.exit(0);
 } 
